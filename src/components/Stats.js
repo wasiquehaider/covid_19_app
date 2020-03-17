@@ -19,21 +19,21 @@ export default function Stats({ url }) {
     );
   return (
     <Grid container spacing={3}>
-      <Grid item xs={4}>
+      <Grid item xs={12} sm={4} lg={4}>
         <div className="gridContent">
           <h3>Confirmed</h3>
           <span>{stats.confirmed.value}</span>
         </div>
         <Paper></Paper>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} sm={4} lg={4}>
         <div className="gridContent">
           <h3>Deaths</h3>
           <span>{stats.deaths.value}</span>
         </div>
         <Paper></Paper>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} sm={4} lg={4}>
         <div className="gridContent">
           <h3>Recovered</h3>
           <span>{stats.recovered.value}</span>
